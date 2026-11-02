@@ -1,4 +1,4 @@
-# Website Undangan Pernikahan Digital — The Wedding of Hamda & Ridho
+# Website Undangan Pernikahan Digital — The Wedding of Furina & Aether
 
 Website undangan pernikahan digital berbasis web single-page scrolling yang elegan, romantis, sinematik, responsif, dan bernuansa Islami. Dibangun menggunakan arsitektur modern **React**, **TypeScript**, **Vite**, **Tailwind CSS**, **Framer Motion**, dan **Lucide React**.
 
