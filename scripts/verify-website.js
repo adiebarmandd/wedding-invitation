@@ -134,12 +134,12 @@ async function runVerification() {
     if (!currentNameVal) {
       await page.type('#rsvp-name', 'Rekan-rekan Kesantrian Azhari')
     }
-    await page.type('#rsvp-message', 'Selamat menempuh hidup baru Hamda & Ridho! Semoga berkah dan langgeng selalu.')
+    await page.type('#rsvp-message', 'Selamat menempuh hidup baru Furina & Aether! Semoga berkah dan langgeng selalu.')
     await submitBtn.click()
     await new Promise((r) => setTimeout(r, 1200))
 
     const updatedRsvpText = await page.$eval('#rsvp', (el) => el.innerText)
-    if (!updatedRsvpText.includes('Selamat menempuh hidup baru Hamda & Ridho')) {
+    if (!updatedRsvpText.includes('Selamat menempuh hidup baru Furina & Aether')) {
       const err = await page.$eval('#rsvp', (el) => el.innerText)
       console.log('RSVP section dump:', err)
       throw new Error('New wish did not appear in guestbook list!')
