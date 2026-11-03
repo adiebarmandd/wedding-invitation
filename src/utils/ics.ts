@@ -71,3 +71,19 @@ export function downloadCalendarEvent(event: CalendarEventProps): void {
   document.body.removeChild(link)
   URL.revokeObjectURL(url)
 }
+export function buildGoogleCalendarUrl(event: CalendarEventProps): string {
+  const start = new Date(event.startDate)
+  const end = event.endDate
+    ? new Date(event.endDate)
+    : new Date(start.getTime() + 5 * 60 * 60 * 1000)
+
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: event.title,
+    dates: `${formatDateToICS(start)}/${formatDateToICS(end)}`,
+    details: event.description,
+    location: event.location,
+  })
+
+  return `https://calendar.google.com/calendar/render?${params.toString()}`
+}
