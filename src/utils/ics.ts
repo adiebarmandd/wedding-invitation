@@ -23,7 +23,7 @@ export function generateICS(event: CalendarEventProps): string {
   const dtstamp = formatDateToICS(now)
   const dtstart = formatDateToICS(start)
   const dtend = formatDateToICS(end)
-  const uid = `wedding-hamda-ridho-${start.getTime()}@weddinginvitation`
+  const uid = `wedding-Furina-Aether-${start.getTime()}@weddinginvitation`
 
   // Format multi-line description dan escape karakter khusus
   const cleanDescription = event.description.replace(/\n/g, '\\n').replace(/,/g, '\\,')
@@ -32,7 +32,7 @@ export function generateICS(event: CalendarEventProps): string {
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//The Wedding of Hamda and Ridho//ID',
+    'PRODID:-//The Wedding of Furina and Aether//ID',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
