@@ -77,7 +77,7 @@ export const EventSection: React.FC<EventSectionProps> = ({
           <CalendarButton
             event={{
               title: `Pernikahan ${brideName} & ${groomName}`,
-              description: `Akad Nikah: ${akadTime}\\nResepsi: ${receptionTime}\\nLokasi: ${venueName}, ${venueAddress}`,
+              description: `Akad Nikah: ${akadTime}\nResepsi: ${receptionTime}\nLokasi: ${venueName}, ${venueAddress}`,
               location: `${venueName}, ${venueAddress}`,
               startDate: weddingDate,
             }}
