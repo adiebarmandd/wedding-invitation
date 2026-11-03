@@ -51,11 +51,11 @@ export const weddingConfig: WeddingConfig = {
   // --- FOTO MEMPELAI ---
   /**
    * Path foto mempelai (letakkan file di folder /public/images/ atau link web aman)
-   * Contoh: '/images/hamda.jpg' atau '/images/ridho.jpg'
+   * Contoh: '/images/istri.jpg' atau '/images/suami.jpg'
    * Jika dibiarkan string kosong (''), website menampilkan placeholder artistik bernuansa floral.
    */
-  bridePhoto: '/images/furina.jpg', // Ganti: Masukkan path foto Hamda di sini, misal: '/images/bride.jpg'
-  groomPhoto: '/images/aether.jpg', // Ganti: Masukkan path foto Ridho di sini, misal: '/images/groom.jpg'
+  bridePhoto: '/images/furina.jpg', // Ganti: Masukkan path foto Istri di sini, misal: '/images/bride.jpg'
+  groomPhoto: '/images/aether.jpg', // Ganti: Masukkan path foto Suami di sini, misal: '/images/groom.jpg'
 
   // --- HERO VIDEO ---
   /**
@@ -88,12 +88,12 @@ export const weddingConfig: WeddingConfig = {
   bankAccounts: [
     {
       bankName: 'BANK BRI (BRI)',
-      accountNumber: '1234567890', // Ganti: Nomor rekening mempelai wanita
+      accountNumber: '588901014689532', // Ganti: Nomor rekening mempelai wanita
       accountHolder: 'Furina',       // Ganti: Atas nama pemilik rekening
     },
     {
       bankName: 'Bank Syariah Indonesia (BSI)',
-      accountNumber: '0987654321', // Ganti: Nomor rekening mempelai pria
+      accountNumber: '588901014689532', // Ganti: Nomor rekening mempelai pria
       accountHolder: 'Aether', // Ganti: Atas nama pemilik rekening
     },
   ],
